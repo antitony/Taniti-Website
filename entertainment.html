@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist's Guide to Taniti</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <h1>A Tourist's Guide to Taniti</h1>
+        </header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="food&Drink.html">Food & Drink</a>
+                <a href="transportation.html">Transportation</a>
+                <a href="lodging.html">Lodging</a>
+                <a href="entertainment.html"class="activePage">Entertainment</a>
+                <a href="attractions.html">Natural Attractions</a>
+            <nav>
+        <main>
+            <div class="wrapper">
+                <div class="main">
+                    <section>
+                        <h2>What to do!</h2>
+                        
+                        <p>Entertainment: Most people visit Taniti to enjoy the beaches, explore the rainforest, 
+                            and to visit the volcano. However, there are other things to do, including visiting a local history museum, 
+                            going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, 
+                            dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling.
+                            Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, 
+                            which is a rapidly developing area on the north side of Yellow Leaf Bay. </p>
+                        
+                     </section>
+                </div>
+
+                
+                <button class="sidePanelToggle" type="button">
+                    <span class="material-icons sp-icon-open">keyboard_double_arrow_left</span>
+                    <span class="material-icons sp-icon-close">keyboard_double_arrow_right</span>
+                </button>
+
+                <div class="FAQS">
+                    <h4>Frequently Asked</h4>
+                    <div class="questions">
+                        <p>What is the voltage of the power outlets?</p>
+                        <p>Power outlets are 120 volts (Same as the US)</p>
+                        <p>What is the drinking age?</p>
+                        <p>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</p>
+                        <p>What's the currency in Taniti?</p>
+                        <p>Taniti uses the US dollar. Many banks facilitate currency exchange and most businesses accept major credit cards.</p>
+                        <p>Do Tanitians speak english?</p>
+                        <p>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    
+    <script>
+        document.querySelector(".sidePanelToggle").addEventListener("click", ()=>{
+            if(document.querySelector(".sidePanelOpen") !==null){
+            document.querySelector(".wrapper").classList.toggle("sidePanelOpen")}
+            else{document.querySelector(".wrapper").classList.add(".sidePanelOpen")
+                document.querySelector(".wrapper").classList.toggle("sidePanelOpen")}
+        });
+    </script>
+</body>
+</html> 
